@@ -19,7 +19,7 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabecalho__menu-hamburguer" class="container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -37,7 +37,7 @@
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
 
-            <label for="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__rotulo">
             <li class="opcoes__item">Categorias</li>
             </label>
 
@@ -55,8 +55,15 @@
 
         <div class="container">  
             <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
-            <a href="#"><img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuário.svg" alt="Meu Perfil" class="container__imagem"></a>
+
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuário.svg" alt="Meu Perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>    
     </header>
     <section class="banner">
@@ -66,6 +73,7 @@
     </section>
     <section class="carrosel">
         <h2 class="carrosel__titulo">Últimos Lançamentos</h2>
+        <div class="carrosel__container">
         <div class="swiper">
 
             <div class="swiper-pagination"></div>
@@ -110,9 +118,11 @@
                 <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
           </div>
+        </div>
     </section>
     <section class="carrosel">
         <h2 class="carrosel__titulo">Mais vendidos</h2>
+        <div class="carrosel__container">
         <div class="swiper">
             <!-- Additional required wrapper -->
             <!-- If we need pagination -->
@@ -134,6 +144,9 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
+        </div>
+
             <div class="card">
                 <!-- 1º linha -->
                 <div class="card__descricao">
@@ -146,7 +159,7 @@
                         </p>
                     </div>
                     <!-- 2º coluna -->
-                    <img src="img/Perfil-escritora 1.svg" class="descricao__imagem">
+                    <img src="img/Escritora.svg" class="descricao__imagem">
                 </div>
     
                 <!-- 2º linha -->
@@ -159,6 +172,7 @@
                     <!-- 2º coluna -->
                     <a href="#" class="botoes__ancora">Saiba mais</a>
                 </div>
+             </div>
             </div>
         </div>
     </section>
